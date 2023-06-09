@@ -10,7 +10,7 @@ from stem.control import Controller
 def renew_tor_circuit():
     '''Renew the Tor circuit and generate a new IP address.'''
     # Access password as secret environment variable
-    password = os.environ.get('torPassword')
+    password = os.environ.get('tor-password')
 
     with Controller.from_port(port=9051) as controller: # type: ignore
         controller.authenticate(password=password)
