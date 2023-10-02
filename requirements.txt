@@ -4,4 +4,4 @@ idna==3.4
 PySocks==1.7.1
 requests==2.31.0
 stem==1.8.2
-urllib3==2.0.3
+urllib3==2.0.6
